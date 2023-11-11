@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Jacob Lenz Portfolio</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        <!-- Recaptcha -->
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+        <!-- Maintains HTML form validation -->
+        <script>
+            function onSubmit(token) {
+                var form = document.getElementById("contactForm");
+                if (form.checkValidity()){
+                    form.submit();
+                } else {
+                    grecaptcha.reset();
+                    form.reportValidity();
+                }
+            }
+        </script>
+    </head>
+    <body id="page-top">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Navigation Bar -->
+
+        <nav class="navbar navbar-expand-lg  text-uppercase fixed-top navbar-colors" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand text-white" href="#page-top">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 text-white rounded" href="#portfolio"><span data-bs-target="#navbarResponsive" data-bs-toggle="collapse">Portfolio</span></a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 text-white rounded" href="#about"><span data-bs-target="#navbarResponsive" data-bs-toggle="collapse">About</span></a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 text-white rounded" href="#contact"><span data-bs-target="#navbarResponsive" data-bs-toggle="collapse">Contact</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navigation -->
+
+        <!-- Header -->
+
+        <header class="text-center text-white header-colors">
+            <div class="container d-flex align-items-center flex-column">
+                <img class="mb-5" src="assets/img/avataaars_transparent.png" alt="generated avatar picture" width="250" height="250">
+                <h1 class="display-2 text-uppercase mb-0">Jacob Lenz</h1>
+                <hr class="hr-divider-light">
+                <p class="h3 mb-0">Software Engineer</p>
+            </div>
+        </header>
+        <!-- End Header -->
+        
+        <!-- Portfolio Section -->
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container-fluid">
+                <!-- Portfolio Section Heading-->
+                <h1 class="display-4 text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+                <!-- Divider-->
+                <hr class="hr-divider-dark">
+                <!-- Portfolio Card Items-->
+                <div class="card-group portfolioCards">
+                    <div class="col-sm-12 col-md-4 card-margin">
+                        <a href="pages/general.html" class="card-link">
+                            <div class="card h-100">
+                                <div class="card-body custom-colors d-flex flex-column justify-content-center">
+                                    <h1 class="display-2 text-center text-white">General Skills</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-4 card-margin">
+                        <a href="pages/capstone.html" class="card-link">
+                            <div class="card h-100">
+                                <div class="card-body custom-colors d-flex flex-column justify-content-center">
+                                    <h1 class="display-2 text-center text-white">Capstone Project</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-4 card-margin">
+                        <!-- <a href="pages/web.html" class="card-link"> -->
+                            <div class="card h-100">
+                                <div class="card-body custom-colors d-flex flex-column justify-content-center">
+                                    <h1 class="display-2 text-center text-white">Web</h5>
+                                    <p class="lead text-white text-center">Comming Soon</p>
+                                </div>
+                            </div>
+                        <!-- </a> -->
+                    </div>
+                    <div class="col-sm-12 col-md-4 card-margin">
+                        <!-- <a href="pages/python.html" class="card-link"> -->
+                            <div class="card h-100">
+                                <div class="card-body custom-colors d-flex flex-column justify-content-center">
+                                    <h1 class="display-2 text-center text-white">Python</h5>
+                                    <p class="lead text-white text-center">Comming Soon</p>
+                                </div>
+                            </div>
+                        <!-- </a> -->
+                    </div>
+                    <div class="col-sm-12 col-md-4 card-margin">
+                        <!-- <a href="pages/flutter.html" class="card-link"> -->
+                            <div class="card h-100">
+                                <div class="card-body custom-colors d-flex flex-column justify-content-center">
+                                    <h1 class="display-2 text-center text-white">Flutter</h5>
+                                    <p class="lead text-white text-center">Comming Soon</p>
+                                </div>
+                            </div>
+                        <!-- </a> -->
+                    </div>
+                    <div class="col-sm-12 col-md-4 card-margin">
+                        <!-- <a href="pages/java.html" class="card-link"> -->
+                            <div class="card h-100">
+                                <div class="card-body custom-colors d-flex flex-column justify-content-center">
+                                    <h1 class="display-2 text-center text-white">Java</h5>
+                                    <p class="lead text-white text-center">Comming Soon</p>
+                                </div>
+                            </div>
+                        <!-- </a> -->
+                    </div>
+                    <div class="col-sm-12 col-md-4 card-margin">
+                        <!-- <a href="pages/cplusplus.html" class="card-link"> -->
+                            <div class="card h-100">
+                                <div class="card-body custom-colors d-flex flex-column justify-content-center">
+                                    <h1 class="display-2 text-center text-white">C++</h5>
+                                    <p class="lead text-white text-center">Comming Soon</p>
+                                </div>
+                            </div>
+                        <!-- </a> -->
+                    </div>
+                    <div class="col-sm-12 col-md-4 card-margin">
+                        <!-- <a href="pages/sql.html" class="card-link"> -->
+                            <div class="card h-100">
+                                <div class="card-body custom-colors d-flex flex-column justify-content-center">
+                                    <h1 class="display-2 text-center text-white">SQL</h5>
+                                    <p class="lead text-white text-center">Comming Soon</p>
+                                </div>
+                            </div>
+                        <!-- </a> -->
+                    </div>
+                    <div class="col-sm-12 col-md-4 card-margin">
+                        <!-- <a href="pages/php.html" class="card-link"> -->
+                            <div class="card h-100">
+                                <div class="card-body custom-colors d-flex flex-column justify-content-center">
+                                    <h1 class="display-2 text-center text-white">PHP</h1>
+                                    <p class="lead text-white text-center">Comming Soon</p>
+                                </div>
+                            </div>
+                        <!-- </a> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Portfolio -->
+
+        <!-- About Section -->
+        <section class="page-section text-white mb-0 about-padding" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h1 class="display-4 text-center text-uppercase mb-0">About</h2>
+                <!-- Divider -->
+                <hr class="hr-divider-light">
+                <!-- About Section Content-->
+                <div class="row">
+                    <div class="col-lg-4 ms-auto"><p class="lead">Currently attending Colorado Technical University pursuing a BSCS Software Engineering with an expected graduation date of December 2023. Has made the President’s List multiple times and expected to graduate Summa Cum Laude.</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">The degree included different programming languages, the different SDLCs, and writing supporting documentation for software development. The final capstone project had a team of students plan and develop a website for a fictional pizza restaurant.</p></div>
+                </div>
+            </div>
+        </section>
+        <!-- End About -->
+
+        <!-- Contact Section-->
+        <section class="page-section" id="contact">
+            <div class="container contact-padding">
+                <!-- Contact Section Heading-->
+                <h1 class="display-4 text-center text-uppercase text-secondary mb-0">Contact Me</h1>
+                <!-- Divider-->
+                <hr class="hr-divider-dark">
+                <!-- Contact Section Form-->
+                <div class="row justify-content-center">
+                    <!-- <p class="lead text-center">Comming Soon</p> -->
+                    <div class="col-lg-8 col-xl-7">
+                        <form id="contactForm" method="POST" action="submit.php">
+                            <div class="form-floating mb-3">
+                                <input class="form-control" name="name" id="name" type="text" placeholder="Enter name" required />
+                                <label for="name">Full name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" name="company" id="company" type="text" placeholder="Enter company name" required/>
+                                <label for="company">Company Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" name="email" id="email" type="email" placeholder="name@example.com" required />
+                                <label for="email">Email address</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" name="phone" id="phone" type="tel" placeholder="(123) 456-7890" required />
+                                <label for="phone">Phone number</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" name="message" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" value="" maxlength="255"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                            <input type="hidden" name="submit_frm" value="1">
+                            <button 
+                                class="btn btn-secondary btn-lg g-recaptcha"
+                                data-sitekey="6LfJjQopAAAAABEtHMNWz9g_PJFkgOZedYouZMG0"
+                                data-callback='onSubmit'
+                                data-action='submit'
+                                id="submitButton" 
+                                type="submit">
+                                Send
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Location</h4>
+                        <p class="lead mb-0">
+                            Lindenhurst, IL
+                        </p>
+                    </div>
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Around the Web</h4>
+                        <a href="https://www.github.com/jlenz126" target="_blank"><img class="mb-5" src="assets/img/github.png" alt="github logo"></a>
+                        <a href="https://www.linkedin.com/in/jacob-lenz-401602230" target="_blank"><img class="mb-5" src="assets/img/linkedin.png" alt="linkedin logo"></a>
+                    </div>
+                    <!-- Footer About Text-->
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">About Freelancer</h4>
+                        <p class="lead mb-0">
+                            Parts of this site are inspired by Freelance which is a free to use, MIT licensed Bootstrap theme created by
+                            <a href="http://startbootstrap.com" class="text-white">Start Bootstrap</a>
+                            .
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Copyright &copy; Jacob Lenz 2023</small></div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html>
